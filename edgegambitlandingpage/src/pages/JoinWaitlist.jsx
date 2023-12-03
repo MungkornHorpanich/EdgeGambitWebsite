@@ -13,8 +13,6 @@ const JoinWaitlist = () => {
       const response = await axios.post("http://localhost:3000/joinwaitlist/", {
         email,
       });
-
-      window.location.replace("https://timmousk.com/");
     } catch (err) {
       console.error("There is an error: ", err);
     }
