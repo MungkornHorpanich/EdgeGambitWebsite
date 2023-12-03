@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HowItWorks = () => {
   return (
@@ -154,9 +155,11 @@ const HowItWorks = () => {
         </div>
       </div>
       <div className="flex mt-[50px]">
-        <button className="py-3 px-8 rounded-md bg-green mx-auto">
-          Get Started
-        </button>
+        <Link className="mx-auto" to={"/wearelaunchingsoon"}>
+          <button className="py-3 px-8 rounded-md bg-green mx-auto">
+            Get Started
+          </button>
+        </Link>
       </div>
     </div>
   );
