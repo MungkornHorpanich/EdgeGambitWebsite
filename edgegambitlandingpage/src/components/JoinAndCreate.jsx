@@ -1,5 +1,6 @@
 import React from "react";
 import Picture from "../assets/Platform.png";
+import { Link } from "react-router-dom";
 
 const JoinAndCreate = () => {
   return (
@@ -8,9 +9,11 @@ const JoinAndCreate = () => {
         Join and Create Competitions
       </h1>
       <img className="mx-auto mt-[50px]" src={Picture} alt="Platform picture" />
-      <button className="py-3 flex justify-center mt-[50px] px-8 rounded-md bg-green mx-auto">
-        Get Early Access
-      </button>
+      <Link to={"/joinwaitlist"}>
+        <button className="py-3 flex justify-center mt-[50px] px-8 rounded-md bg-green mx-auto">
+          Get Early Access
+        </button>
+      </Link>
     </div>
   );
 };

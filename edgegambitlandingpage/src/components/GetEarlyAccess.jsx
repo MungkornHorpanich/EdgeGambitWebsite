@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const GetEarlyAccess = () => {
   return (
@@ -11,9 +12,11 @@ const GetEarlyAccess = () => {
       </p>
 
       <div className="flex mt-[30px]">
-        <button className="py-3 px-8 rounded-md bg-green mx-auto">
-          Get Early Access
-        </button>
+        <Link className="mx-auto" to={"/joinwaitlist"}>
+          <button className="py-3 px-8 rounded-md bg-green mx-auto">
+            Get Early Access
+          </button>
+        </Link>
       </div>
     </div>
   );

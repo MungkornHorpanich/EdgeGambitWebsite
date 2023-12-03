@@ -1,6 +1,7 @@
 import React from "react";
 import { FaXTwitter, FaDiscord } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -116,8 +117,8 @@ const Footer = () => {
       </svg>
 
       <div className="flex gap-5 justify-center font-extralight mt-[20px]">
-        <h1>Terms of Use</h1>
-        <h1>Privacy Policy</h1>
+        <Link>Terms of Use</Link>
+        <Link>Privacy Policy</Link>
       </div>
 
       <div className="flex gap-5 justify-center mt-[20px]">

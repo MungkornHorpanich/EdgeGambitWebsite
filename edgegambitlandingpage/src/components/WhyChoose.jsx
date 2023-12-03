@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const WhyChoose = () => {
   return (
@@ -251,9 +252,11 @@ const WhyChoose = () => {
         </div>
       </div>
       <div className="flex mt-[50px]">
-        <button className="py-3 px-8 rounded-md bg-green mx-auto">
-          Join Waitlist
-        </button>
+        <Link className="mx-auto" to={"/joinwaitlist"}>
+          <button className="py-3 px-8 rounded-md bg-green mx-auto">
+            Join Waitlist
+          </button>
+        </Link>
       </div>
     </div>
   );

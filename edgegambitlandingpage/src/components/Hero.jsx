@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../assets/HeroPicture.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -19,9 +20,11 @@ const Hero = () => {
           </p>
 
           <div className="pt-10 w-full flex flex-row gap-5">
-            <button className="py-3 px-3 rounded-md bg-green ">
-              Get early access
-            </button>
+            <Link to={"/joinwaitlist"}>
+              <button className="py-3 px-3 rounded-md bg-green ">
+                Get early access
+              </button>
+            </Link>
             <button className="py-3 px-3 rounded-md border border-[#04bf8a]">
               How it works
             </button>
