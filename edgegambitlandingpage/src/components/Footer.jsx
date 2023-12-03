@@ -117,8 +117,8 @@ const Footer = () => {
       </svg>
 
       <div className="flex gap-5 justify-center font-extralight mt-[20px]">
-        <Link>Terms of Use</Link>
-        <Link>Privacy Policy</Link>
+        <Link to={"/termofuse"}>Terms of Use</Link>
+        <Link to={"/privacypolicy"}>Privacy Policy</Link>
       </div>
 
       <div className="flex gap-5 justify-center mt-[20px]">
