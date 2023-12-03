@@ -14,7 +14,7 @@ const JoinWaitlist = () => {
         email,
       });
 
-      return redirect("/thanksforjoining");
+      window.location.replace("https://timmousk.com/");
     } catch (err) {
       console.error("There is an error: ", err);
     }
