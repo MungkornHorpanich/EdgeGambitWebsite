@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-require("dotenv").config;
+require("dotenv").config();
 
 const User = require("./models/Emails");
 
@@ -16,9 +16,7 @@ app.use(
 );
 app.use(express.json());
 
-mongoose.connect(
-  "mongodb+srv://EdgeGambit:bHJiLFye0zZYqHfJ@cluster0.hzvupoa.mongodb.net/?retryWrites=true&w=majority"
-);
+mongoose.connect(process.env.MONGO_URL);
 
 app.get("/test", async (req, res) => {
   res.json("test ok");

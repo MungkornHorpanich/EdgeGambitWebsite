@@ -1,17 +1,11 @@
 import React from "react";
-import {
-  BrowserRouter,
-  Route,
-  RouterProvider,
-  Routes,
-  createBrowserRouter,
-} from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import JoinWaitlist from "./pages/JoinWaitlist";
 import ThanksForJoining from "./pages/ThanksForJoining";
 import WeAreLaunchingSoon from "./pages/WeAreLaunchingSoon";
 import TermOfUse from "./pages/TermOfUse";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Privacy from "./pages/Privacy";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -37,7 +31,7 @@ const App = () => {
     },
     {
       path: "/privacypolicy",
-      element: <PrivacyPolicy />,
+      element: <Privacy />,
     },
   ]);
 

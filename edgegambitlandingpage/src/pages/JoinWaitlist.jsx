@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import bg from "../assets/Bg.png";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const JoinWaitlist = () => {
   const [email, setEmail] = useState("");
@@ -24,12 +24,17 @@ const JoinWaitlist = () => {
   };
 
   return (
-    <div className="backdrop-blur-sm min-h-screen p-3 justify-center overflow-y-hidden flex items-center">
-      <img
-        src={bg}
-        alt="background image"
-        className="w-screen h-screen absolute"
-      />
+    <div
+      className="backdrop-blur-sm min-h-screen p-3 justify-center overflow-y-hidden flex items-center"
+      style={{
+        backgroundImage: `url(${bg})`,
+        width: screen,
+        height: screen,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <div className="bg-[#0F1E2F] flex text-white opacity-70 max-w-8xl mx-auto rounded-xl flex-col md:flex-row py-10 px-8">
         <div className="p-5 md:w-[40%] w-[100%]">
           <svg
@@ -175,8 +180,20 @@ const JoinWaitlist = () => {
               Join Waitlist
             </button>
             <p className="ml-5 mt-2 text-sm">
-              By clicking "Join Waitlist" you agree to Terms of Use and Privacy
-              Policy
+              By clicking "Join Waitlist" you agree to{" "}
+              <Link
+                className="underline font-bold text-green"
+                to={"/termofuse"}
+              >
+                Term of use
+              </Link>{" "}
+              and{" "}
+              <Link
+                className="underline font-bold text-green"
+                to={"/privacypolicy"}
+              >
+                Privacy Policy
+              </Link>
             </p>
           </form>
         </div>
