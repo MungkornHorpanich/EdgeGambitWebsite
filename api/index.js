@@ -6,7 +6,6 @@ require("dotenv").config();
 const User = require("./models/Emails");
 
 const app = express();
-const PORT = 3000;
 
 app.use(
   cors({
@@ -32,6 +31,6 @@ app.post("/joinwaitlist", async (req, res) => {
   res.json("The email has been sent");
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log("The server is running at  port 3000");
 });

@@ -26,7 +26,7 @@ const App = () => {
       element: <WeAreLaunchingSoon />,
     },
     {
-      path: "/termofuse",
+      path: "/termsofuse",
       element: <TermOfUse />,
     },
     {
