@@ -30,6 +30,8 @@ app.post("/joinwaitlist", async (req, res) => {
   const emailDoc = await User.create({
     email,
   });
+
+  res.json("The email has been sent");
 });
 
 app.listen(PORT, () => {

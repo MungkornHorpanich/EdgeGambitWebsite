@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import bg from "../assets/Bg.png";
 import axios from "axios";
-import { redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const JoinWaitlist = () => {
   const [email, setEmail] = useState("");
+  const [redirect, setRedirect] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleSubmit = async (ev) => {
     ev.preventDefault();
@@ -13,6 +16,8 @@ const JoinWaitlist = () => {
       const response = await axios.post("http://localhost:3000/joinwaitlist/", {
         email,
       });
+
+      navigate("/thanksforjoining");
     } catch (err) {
       console.error("There is an error: ", err);
     }
