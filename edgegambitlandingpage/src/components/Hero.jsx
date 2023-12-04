@@ -19,7 +19,7 @@ const Hero = () => {
             multi-participant, or team vs. team styles? We’ve got you covered!
           </p>
 
-          <div className="pt-10 w-full flex flex-row gap-5">
+          <div className="pt-10 w-full justify-center md:justify-normal flex flex-row gap-5">
             <Link to={"/joinwaitlist"}>
               <button className="py-3 px-3 rounded-md bg-green ">
                 Get early access

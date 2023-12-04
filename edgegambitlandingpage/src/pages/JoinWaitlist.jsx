@@ -5,7 +5,6 @@ import { Link, useNavigate } from "react-router-dom";
 
 const JoinWaitlist = () => {
   const [email, setEmail] = useState("");
-  const [redirect, setRedirect] = useState(false);
 
   const navigate = useNavigate();
 
@@ -35,7 +34,7 @@ const JoinWaitlist = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="bg-[#0F1E2F] flex text-white opacity-70 max-w-8xl mx-auto rounded-xl flex-col md:flex-row py-10 px-8">
+      <div className="bg-[#0F1E2F] flex text-white opacity-70 max-w-5xl rounded-xl flex-col md:flex-row py-10 px-8">
         <div className="p-5 md:w-[40%] w-[100%]">
           <svg
             width="150"
@@ -157,7 +156,7 @@ const JoinWaitlist = () => {
             Unlock exclusive benefits with early registration once we are live!
           </p>
         </div>
-        <div className="md:w-[60%] w-[100%] flex flex-col p-12">
+        <div className="md:w-[60%] w-[100%] flex flex-col py-12">
           <h1 className="text-green text-lg mt-5 ml-5 font-semibold">
             Early Access
           </h1>
