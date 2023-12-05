@@ -12,9 +12,12 @@ const JoinWaitlist = () => {
     ev.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:3000/joinwaitlist/", {
-        email,
-      });
+      const response = await axios.post(
+        "https://edgegambit.onrender.com/joinwaitlist/",
+        {
+          email,
+        }
+      );
 
       navigate("/thanksforjoining");
     } catch (err) {
