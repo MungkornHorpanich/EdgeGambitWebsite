@@ -34,7 +34,7 @@ const JoinWaitlist = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="bg-[#0F1E2F] flex text-white opacity-70 max-w-5xl rounded-xl flex-col md:flex-row py-10 px-8">
+      <div className="bg-[#0F1E2F] flex text-white opacity-70 max-w-[800px] rounded-xl flex-col md:flex-row py-10 px-8">
         <div className="p-5 md:w-[40%] w-[100%]">
           <svg
             width="150"
@@ -156,8 +156,8 @@ const JoinWaitlist = () => {
             Unlock exclusive benefits with early registration once we are live!
           </p>
         </div>
-        <div className="md:w-[60%] w-[100%] flex flex-col py-12">
-          <h1 className="text-green text-lg mt-5 ml-5 font-semibold">
+        <div className="md:w-[60%] w-[100%] flex flex-col py-12 pl-10">
+          <h1 className="text-green text-lg mt-5 ml-5  font-semibold">
             Early Access
           </h1>
           <input
@@ -168,7 +168,7 @@ const JoinWaitlist = () => {
             }}
             name="email"
             id="email"
-            className="px-3 w-[300px] rounded-lg py-2 mt-3 ml-5 bg-bg border border-white"
+            className="px-3 w-[300px] rounded-lg py-2 mt-3 ml-5 items-center bg-bg border border-white"
             placeholder="Email"
           />
           <form onSubmit={handleSubmit}>
@@ -178,17 +178,17 @@ const JoinWaitlist = () => {
             >
               Join Waitlist
             </button>
-            <p className="ml-5 mt-2 text-sm">
-              By clicking "Join Waitlist" you agree to{" "}
+            <p className="ml-5 w-[300px] mt-2 text-sm">
+              By clicking "Join Waitlist" you agree to
               <Link
-                className="underline font-bold text-green"
-                to={"/termofuse"}
+                className="underline px-1 font-bold text-green"
+                to={"/termsofuse"}
               >
                 Term of use
-              </Link>{" "}
-              and{" "}
+              </Link>
+              and
               <Link
-                className="underline font-bold text-green"
+                className="underline px-1 font-bold text-green"
                 to={"/privacypolicy"}
               >
                 Privacy Policy
