@@ -10,7 +10,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: "https://edgegambit-cinnamonrolly.vercel.app/",
+    origin: "https://edgegambit.vercel.app",
   })
 );
 app.use(express.json());
