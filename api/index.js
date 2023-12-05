@@ -10,7 +10,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: "https://edgegambit.netlify.app/",
+    origin: "https://edgegambit-cinnamonrolly.vercel.app/",
   })
 );
 app.use(express.json());
