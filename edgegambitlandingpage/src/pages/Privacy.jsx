@@ -8,7 +8,7 @@ const Privacy = () => {
   return (
     <div>
       <Navbar />
-      <div className="max-w-4xl pt-[150px] mx-auto">
+      <div className="max-w-4xl pt-[150px] p-5 mx-auto">
         <h1 className="text-4xl font-bold">Privacy Policy</h1>
 
         <p className="mt-7 text-lg font-semibold">Information We Collect</p>
