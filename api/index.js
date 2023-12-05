@@ -10,7 +10,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: "https://edgegambit.com",
+    origin: "https://www.edgegambit.com/",
   })
 );
 app.use(express.json());
