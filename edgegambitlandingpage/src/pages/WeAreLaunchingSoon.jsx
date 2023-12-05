@@ -6,7 +6,9 @@ const WeAreLaunchingSoon = () => {
     <div>
       <Navbar />
       <div className="w-screen h-screen flex flex-col mx-auto items-center justify-center">
-        <h1 className="text-5xl font-light">We Are Launching Soon!</h1>
+        <h1 className="text-3xl px-3 md:text-4xl lg:text-5xl text-center font-light">
+          We Are Launching Soon!
+        </h1>
         <svg
           width="200"
           height="25"

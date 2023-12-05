@@ -36,7 +36,7 @@ const HowItWorks = () => {
             </svg>
             <h1 className="text-green text-center">Set Up Your Account</h1>
           </div>
-          <div className=" mt-[90px] md:mt-[100px]">
+          <div className=" mt-[60px] mobile:mt-[70px] md:mt-[100px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="100"
@@ -55,7 +55,7 @@ const HowItWorks = () => {
             <h1 className="text-green text-center">Connect Exchange</h1>
           </div>
 
-          <div className="mt-[100px] md:mt-[100px]">
+          <div className="mt-[80px] mobile:mt-[90px] md:mt-[100px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="75"
@@ -76,7 +76,7 @@ const HowItWorks = () => {
             <h1 className="text-green text-center">Connect Exchange</h1>
           </div>
 
-          <div className="mt-[100px] md:mt-[100px]">
+          <div className="mt-[60px] mobile:mt-[100px] md:mt-[100px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="75"
@@ -96,7 +96,7 @@ const HowItWorks = () => {
             <h1 className="text-green text-center">Connect Exchange</h1>
           </div>
 
-          <div className="mt-[100px] md:mt-[90px]">
+          <div className="mt-[70px] mobile:mt-[100px] md:mt-[90px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="85"
@@ -155,7 +155,7 @@ const HowItWorks = () => {
         </div>
       </div>
       <div className="flex mt-[50px]">
-        <Link className="mx-auto" to={"/wearelaunchingsoon"}>
+        <Link className="mx-auto" to={"/joinwaitlist"}>
           <button className="py-3 px-8 rounded-md bg-green mx-auto">
             Get Started
           </button>

@@ -7,7 +7,12 @@ export default {
       green: "#04BF8A",
       bg: "#0f1e2f",
     },
-    extend: {},
+
+    extend: {
+      screens: {
+        mobile: "397px",
+      },
+    },
   },
   plugins: [],
 };
