@@ -13,7 +13,7 @@ const JoinWaitlist = () => {
 
     try {
       const response = await axios.post(
-        "https://edgegambit.onrender.com/joinwaitlist/",
+        "https://edgegambit.onrender.com/joinwaitlist",
         {
           email,
         }
