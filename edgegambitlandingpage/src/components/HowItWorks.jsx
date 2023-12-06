@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HowItWorks = () => {
   return (
-    <div className="py-20 z-0 px-4 bg-[#101828] w-full mx-auto">
+    <div id="howitworks" className="py-20 z-0 px-4 bg-[#101828] w-full mx-auto">
       <h1 className="text-center text-white lg:text-[42px] md:text-[30px] text-[22px]">
         How It Works
       </h1>
@@ -73,7 +73,7 @@ const HowItWorks = () => {
                 stroke-linejoin="round"
               />
             </svg>
-            <h1 className="text-green text-center">Connect Exchange</h1>
+            <h1 className="text-green text-center">Join and Create Competitions</h1>
           </div>
 
           <div className="mt-[60px] mobile:mt-[100px] md:mt-[100px]">
@@ -93,7 +93,7 @@ const HowItWorks = () => {
                 fill-opacity="0.75"
               />
             </svg>
-            <h1 className="text-green text-center">Connect Exchange</h1>
+            <h1 className="text-green text-center">Win Money. Earn Commissions</h1>
           </div>
 
           <div className="mt-[70px] mobile:mt-[100px] md:mt-[90px]">
@@ -118,11 +118,11 @@ const HowItWorks = () => {
                 stroke="#FAF9F6"
                 stroke-opacity="0.75"
                 stroke-width="6"
-                stroke-linecap="round"
+                stroke-linecap="round"ß
                 stroke-linejoin="round"
               />
             </svg>
-            <h1 className="text-green text-center">Connect Exchange</h1>
+            <h1 className="text-green text-center">Showcase Your Skills</h1>
           </div>
         </div>
         <div className="h-[1100px] bg-green w-[7px]">

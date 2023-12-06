@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../assets/HeroPicture.png";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -25,9 +26,17 @@ const Hero = () => {
                 Get early access
               </button>
             </Link>
-            <button className="py-3 px-3 rounded-md border border-[#04bf8a]">
-              How it works
-            </button>
+            <ScrollLink
+              to="howitworks"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              <button className="py-3 px-3 rounded-md border border-[#04bf8a]">
+                How it works
+              </button>
+            </ScrollLink>
           </div>
         </div>
         <div className="ml-[-5px]">
